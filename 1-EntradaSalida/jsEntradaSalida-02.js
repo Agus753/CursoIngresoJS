@@ -8,7 +8,7 @@ function mostrar()
 {
 	let nombre;
 
-	nombre = prompt("Por favor, introduzca su nombre")
+	nombre = prompt("Introduzca su nombre")
 
 	/*Solo se puede guardar un dato en la variable. Si yo inicializo  una variable con un nombre y 
 	luego le doy otro nombre, el primer dato se "pisa" y se toma el segundo nombre */
