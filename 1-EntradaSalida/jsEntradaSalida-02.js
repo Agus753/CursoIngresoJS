@@ -2,7 +2,7 @@
 Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 
-//El dato prompt, a diferencia de "alert", siene dos botones: el de aceptar y cancelar.
+//El dato prompt, a diferencia de "alert", tiene dos botones: el de aceptar y cancelar.
 // El dato prompt permite ingresar un dato 
 function mostrar()
 {
