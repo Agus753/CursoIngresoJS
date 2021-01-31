@@ -6,7 +6,6 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 // El dato prompt permite ingresar un dato 
 function mostrar()
 {
-
 	let nombre;
 
 	nombre = prompt("Introduzca su nombre")
