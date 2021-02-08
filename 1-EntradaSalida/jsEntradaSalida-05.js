@@ -7,9 +7,15 @@ function mostrar()
 
 	let edad;
 
-	nombre = document.getElementById("txtIdNombre").value;
+	let apellido;
 
-	edad = document.getElementById("txtIdEdad").value;
+	nombre = document.getElementById("txtIdNombre", "José").value;
+
+	edad = document.getElementById("txtIdEdad", "66").value;
+
+	//apellido = prompt("Ingrese su apellido", "Perez");
+
+	//alert("Usted se llama " + nombre + ", " + apellido + " y tiene " + edad + " años");
 
 	alert("Usted se llama " + nombre + " y tiene " + edad + " años");
 

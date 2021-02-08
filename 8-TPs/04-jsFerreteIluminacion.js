@@ -10,5 +10,89 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	let cantidadLamparas;
+ 	let marca;
+ 	let precioLamparas;
+ 	let precioTotal;
+ 	let aumento;
+ 	let precioFinal;
+ 	let porcentaje;
+
+ 	cantidadLamparas = document.getElementById('txtIdCantidad').value;
+ 	cantidadLamparas = parseInt(cantidadLamparas);
+
+ 	marca = document.getElementById('Marca').value;
+
+ 	descuento = 0;
+
+ 	precioLamparas = 35 * cantidadLamparas;
+
+ 	//Si la cantidad de lamparas es mayor a cinco, el descuento es del 50%
+ 	if(cantidadLamparas > 5)
+	{
+		porcentaje = 50;		
+ 	}
+
+ 	else
+ 	{
+	 	// Si la cantidad de lamparas es igual a 5...
+	 	if(cantidadLamparas == 5)
+	 	{
+	 		if(marca == "ArgentinaLuz")
+	 		{
+	 			//Si es ArgentinaLuz, el descuento es del 40%
+		 		porcentaje = 40;
+	 		}
+	 		else
+	 		{
+	 			//Si no es ArgentinaLuz, el desxuento es del 30%
+				porcentaje = 30
+	 		}
+	 	}
+	 	else
+	 	{
+	 		if(cantidadLamparas == 4)
+	 		{
+	 			if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+	 			{
+	 				porcentaje = 25;
+	 			}
+
+	 			else
+	 			{
+	 				porcentaje = 20;
+	 			}
+	 		}
+
+	 		else
+	 		{
+	 			if(cantidadLamparas == 3)
+	 			{
+	 				if(marca == "ArgentinaLuz")
+	 				{
+	 					porcentaje = 15;
+	 				}
+
+	 				else
+	 				{
+	 					if(marca == "FelipeLamparas")
+	 					{
+	 						porcentaje = 10;
+	 					}
+
+	 					else
+	 					{
+	 						porcentaje = 5;
+	 					}
+	 				}
+	 			}
+	 		}
+	 	}
+ 	}
+
+ 	descuento = precioLamparas * porcentaje / 100;
+ 	precioFinal = precioLamparas - descuento;
+
+	document.getElementById('txtIdprecioDescuento').value = "El precio total es: " + precioFinal;
+ 	//alert("El precio total es: " + precioTotal);*/
 }
