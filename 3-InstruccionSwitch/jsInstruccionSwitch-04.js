@@ -25,7 +25,5 @@ function mostrar()
 			alert("Este mes tiene 30 días");
 			break;
 	}
-
-
-
+	
 }//FIN DE LA FUNCIÓN
